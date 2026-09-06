@@ -11,17 +11,34 @@ using namespace std;
 // Input: nums = [2,7,11,15], target = 9
 // Output: [0,1]
 
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& arr, int target) {
-        int n = size(arr);
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (arr[i] + arr[j] == target ) {
-                    return {i, j};
-                }
-            }
-        }
+// class Solution {
+// public:
+//     vector<int> twoSum(vector<int>& arr, int target) {
+//         int n = size(arr);
+//         for (int i = 0; i < n; i++) {
+//             for (int j = i + 1; j < n; j++) {
+//                 if (arr[i] + arr[j] == target ) {
+//                     return {i, j};
+//                 }
+//             }
+//         }
         
-    }
-};
+//     }
+// };
+
+
+// class Solution {
+// public:
+//     vector<int> twoSum(vector<int>& arr, int target) {
+//         if (arr.empty()) return{};
+//         int n = size(arr);
+//         int i = 0;
+//         while (i + 1 < n) {
+//             if (arr[i] + arr[i + 1] == target) {
+//                 return {i, i + 1};
+//             }
+//             i++;
+//         }
+//         return{};
+//     }
+// };
