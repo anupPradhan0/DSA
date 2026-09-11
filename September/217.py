@@ -27,3 +27,14 @@ class Solution:
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         return len(nums) != len(set(nums))
+
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        arr = set()
+        for v in nums:
+            if v in arr:
+                return True
+            arr.add(v)
+
+        return False
